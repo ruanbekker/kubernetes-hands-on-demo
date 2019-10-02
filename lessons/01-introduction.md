@@ -50,7 +50,13 @@ Every step will be run in its own layer:
 3. ADD: We are adding `app.py` from our local directory to `/code/app.py` in our container
 4. CMD: Specifies the executable to start our application
 
-To build our image, we use the `docker build` command and specify which Dockerfile we want to use and also the tag we want as our image that will be hosted on the docker host:
+Change to the lab directory where the `Dockerfile` and `app.py` is located:
+
+```
+$ cd ../labs/00-docker/
+```
+
+To build our image, we use the `docker build` command and specify which Dockerfile we want to use and also the tag we want as our image that will be hosted on the docker host.
 
 ```
 $ docker build -f Dockerfile -t local-example:v1 .
