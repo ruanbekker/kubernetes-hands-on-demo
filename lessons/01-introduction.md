@@ -16,7 +16,7 @@ A container is a standard unit of software where you code and all its dependenci
 
 Advantages of using Containers:
 
-* Portable
+* Portable, once you build your image you can run a container anywhere on a container runtime (wrt linux containers)
 * Lightweight, as containers share the kernel of the OS
 * Secure, while containers share the OS kernel with other containers, each running as isolated processes in user space.
 
