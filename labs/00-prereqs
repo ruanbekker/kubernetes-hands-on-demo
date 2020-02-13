@@ -1,4 +1,0 @@
-```
-k3d create --name="demo" --workers="2" --publish="8000:8000"
-export KUBECONFIG="$(k3d get-kubeconfig --name='demo')"
-```
