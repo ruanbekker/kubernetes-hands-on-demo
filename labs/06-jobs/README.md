@@ -21,7 +21,7 @@ Create a Namespace for our Jobs:
 ## Basic Job
 
 ```
-> kubectl apply -f jobs/01-job.yml
+> kubectl apply -f 01-job.yml
 job.batch/basic created
 ```
 
@@ -52,7 +52,7 @@ job.batch "basic" deleted
 ## Jobs with Script as ConfigMap
 
 ```
-> kubectl apply -f jobs/02-job-with-script.yml
+> kubectl apply -f 02-job-with-script.yml
 configmap/script-configmap unchanged
 job.batch/script-job created
 ```
@@ -83,7 +83,7 @@ job.batch "script-job" deleted
 Jobs with `activeDeadlineSeconds` less than the runtime of the job
 
 ```
-> kubectl apply -f jobs/03-job-with-activedeadlineseconds.yml
+> kubectl apply -f 03-job-with-activedeadlineseconds.yml
 job.batch/hello-goodbye-with-timeout created
 ```
 
@@ -110,7 +110,7 @@ status:
 ## BackoffLimit with Jobs
 
 ```
-> kubectl apply -f jobs/04-job-with-backupofflimit.yml
+> kubectl apply -f 04-job-with-backupofflimit.yml
 job.batch/back-off-limit created
 ```
 
@@ -147,7 +147,7 @@ status:
 ## CompletionNumber with Jobs
 
 ```
-> kubectl apply -f jobs/05-job-with-completion-number.yml
+> kubectl apply -f 05-job-with-completion-number.yml
 job.batch/completion-number created
 ```
 
@@ -185,7 +185,7 @@ status:
 ## Parallelism with Jobs
 
 ```
-> kubectl apply -f jobs/06-job-with-paralell-execusions.yml
+> kubectl apply -f 06-job-with-paralell-execusions.yml
 job.batch/parallelism created
 ```
 
@@ -222,7 +222,7 @@ status:
 A cronjob spawns a job
 
 ```
-> kubectl apply -f jobs/07-cronjob.yml
+> kubectl apply -f 07-cronjob.yml
 cronjob.batch/every-minute created
 ruan.bekker in ~/workspace/personal/k3d-prometheus-grafana
 ```
@@ -268,7 +268,7 @@ cronjob.batch "every-minute" deleted
 * `Allow` will let multiple Job instances run concurrently.
 
 ```
-> kubectl apply -f jobs/08-cronjob-concurrency.yml
+> kubectl apply -f 08-cronjob-concurrency.yml
 cronjob.batch/concurrency created
 ```
 
